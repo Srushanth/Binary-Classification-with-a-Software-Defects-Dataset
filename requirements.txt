@@ -1,4 +1,5 @@
 ipython
+optuna==3.3.0
 pandas
 numpy
 scikit-learn
@@ -8,3 +9,5 @@ xgboost
 scikeras
 keras
 lightgbm
+scikit-optimize
+hyperopt
