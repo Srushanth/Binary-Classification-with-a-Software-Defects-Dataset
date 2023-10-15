@@ -1,4 +1,5 @@
 ipython
+ipywidgets
 optuna==3.3.0
 pandas
 numpy
@@ -11,3 +12,9 @@ keras
 lightgbm
 scikit-optimize
 hyperopt
+seaborn
+plotly
+nbformat>=4.2.0
+mljar-supervised
+tpot
+torch

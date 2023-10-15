@@ -1,0 +1,61 @@
+{
+    "name": "Ensemble_Stacked",
+    "ml_task": "binary_classification",
+    "optimize_metric": "auc",
+    "selected_models": [
+        {
+            "model": "12_Xgboost",
+            "repeat": 1.0
+        },
+        {
+            "model": "12_Xgboost_GoldenFeatures",
+            "repeat": 1.0
+        },
+        {
+            "model": "20_LightGBM",
+            "repeat": 2.0
+        },
+        {
+            "model": "29_CatBoost",
+            "repeat": 2.0
+        },
+        {
+            "model": "56_NeuralNetwork",
+            "repeat": 1.0
+        },
+        {
+            "model": "58_Xgboost",
+            "repeat": 1.0
+        },
+        {
+            "model": "59_LightGBM_Stacked",
+            "repeat": 3.0
+        },
+        {
+            "model": "65_Xgboost",
+            "repeat": 2.0
+        },
+        {
+            "model": "65_Xgboost_Stacked",
+            "repeat": 1.0
+        },
+        {
+            "model": "66_Xgboost",
+            "repeat": 1.0
+        },
+        {
+            "model": "7_Default_NeuralNetwork",
+            "repeat": 1.0
+        },
+        {
+            "model": "Ensemble",
+            "repeat": 33.0
+        }
+    ],
+    "predictions_fname": "Ensemble_Stacked\\predictions_ensemble.csv",
+    "metric_name": "auc",
+    "final_loss": -0.793349232303975,
+    "train_time": 66.30600500106812,
+    "is_stacked": true,
+    "threshold": 0.5017118372797571
+}

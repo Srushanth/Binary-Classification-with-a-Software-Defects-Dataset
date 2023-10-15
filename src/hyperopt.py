@@ -37,10 +37,10 @@ if __name__ == "__main__":
     y = df["defects"].values
 
     param_space = {
-        "max_depth": hyperopt.pyll.base.scope.int(hyperopt.hp.quniform("max_depth", 3, 15, 1)),
-        "n_estimators": hyperopt.pyll.base.scope.int(hyperopt.hp.quniform("n_estimators", 100, 600)),
-        "criterion": hyperopt.hp.choice("criterion", ["gini", "entropy"]),
-        "max_features": hyperopt.hp.uniform("max_features", 0.01, 1)
+        "max_depth": scope.int(hp.quniform("max_depth", 3, 15, 1)),
+        "n_estimators": scope.int(hp.quniform("n_estimators", 100, 600)),
+        "criterion": hp.choice("criterion", ["gini", "entropy"]),
+        "max_features": hp.uniform("max_features", 0.01, 1)
     }
 
     param_names = [

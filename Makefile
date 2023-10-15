@@ -17,6 +17,6 @@ format:
 	black app.py
 
 lint:
-	pylint app.py
+	pylint *.py
 
 all: install format lint test
